@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning Examples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Positioning Examples</h1>
+  
+  <h2>Static Positioning</h2>
+  <p class="explanation">Elements with the default positioning (static) are placed in the normal document flow. They do not respond to top, bottom, left, or right properties. Changes made to other elements don't affect statically positioned elements.</p>
+  <div class="static">Static</div>
+
+  <h2>Relative Positioning</h2>
+  <p class="explanation">Elements with relative positioning are positioned relative to their normal position in the document flow. They can be moved using top, bottom, left, or right properties without affecting other elements.</p>
+  <div class="relative">Relative
+    <div class="absolute">Absolute</div>
+  </div>
+
+  <h2>Absolute Positioning</h2>
+  <p class="explanation">Elements with absolute positioning are removed from the normal document flow and positioned relative to their closest positioned ancestor (or the body if no positioned ancestor exists). They won't affect the layout of other elements.</p>
+  <div class="absolute-example">Absolute</div>
+
+  <h2>Fixed Positioning</h2>
+  <p class="explanation">Elements with fixed positioning are positioned relative to the browser window. They remain in the same place even if the page is scrolled. Commonly used for headers, footers, or elements that should remain visible regardless of scrolling.</p>
+  <div class="fixed">Fixed</div>
+
+  <h2>Sticky Positioning</h2>
+  <p class="explanation">Elements with sticky positioning are positioned based on the user's scroll position. They act like relative positioning until they reach a specific point on the screen (defined by top, bottom, left, or right), then they stick ("freeze") at that position.</p>
+  <div class="sticky">Sticky</div>
+</body>
+</html>
