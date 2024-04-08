@@ -3,41 +3,54 @@ body, ul {
   padding: 0;
 }
 
-
 .navbar {
-  background-color: rgb(232, 123, 123); 
-  padding: 15px 15px; 
-
+  background-color: rgb(232, 123, 123);
+  padding: 15px 15px;
+  position: fixed; 
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 5px;
 }
 
 .container {
-  margin: 0 auto; 
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
+  position: relative;
+  top: 50px;
 }
 
 .logo {
-  color: #fff; 
-  text-decoration: none; 
-  font-size: 24px; 
-  font-weight: bold; 
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute; 
+  left: 15px; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .nav-links {
-  list-style-type: none; 
+  list-style-type: none;
+  position: relative;
+  padding: 10px; 
 }
 
 .nav-links li {
-  display: inline-block; 
-  margin-left: 20px; 
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .nav-links li a {
-  color: #fff; 
-  text-decoration: none; 
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-links li a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
+  position: fixed; 
+  right: 20px; 
+  bottom: 20px; 
 }
